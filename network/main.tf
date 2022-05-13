@@ -1,3 +1,13 @@
+terraform {
+  backend "s3" {
+    bucket  = "management-bucket-code"
+    key     = "key/terraform.tfstate"
+    region  = "ap-south-1"
+    profile = "shubham"
+  }
+}
+
+
 
 module "vpc" {
   source                                               = "OT-CLOUD-KIT/vpc/aws"
