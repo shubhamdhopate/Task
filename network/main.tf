@@ -3,7 +3,7 @@ terraform {
     bucket  = "management-bucket-code"
     key     = "key/terraform.tfstate"
     region  = "ap-south-1"
-    profile = "shubham"
+    #profile = "shubham"
   }
 }
 
