@@ -84,7 +84,7 @@ variable "enable_vpc_logs" {
 variable "enable_aws_route53_zone_resource" {
   type        = bool
   description = "This variable is to create Route 53 Zone"
-  default     = true
+  default     = false 
 }
 variable "enable_public_web_security_group_resource" {
   type        = bool
