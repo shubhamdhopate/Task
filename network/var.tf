@@ -6,7 +6,7 @@ variable "cidr_block" {
 variable "vpc_name" {
   description = "Name of the VPC to be created"
   type        = string
-  default     = "demo-vpc"
+  default     = "sample-vpc"
 }
 variable "tags" {
   description = "Additional tags for the VPC"
@@ -50,32 +50,32 @@ variable "enable_nat_privateRouteTable_PrivateSubnets_resource" {
 variable "igw_name" {
   type        = string
   description = "Internet Gateway name"
-  default     = "demo-igw"
+  default     = "sample-igw-new"
 }
 variable "pub_rt_name" {
   type        = string
   description = "Public route table name"
-  default     = "demo-public-rt"
+  default     = "sample-public-rt-new"
 }
 variable "pub_subnet_name" {
   type        = string
   description = "public subnet name"
-  default     = "demo-public-subnet"
+  default     = "sample-public-subnet-new"
 }
 variable "nat_name" {
   type        = string
   description = "Name of Nat Gateway"
-  default     = "demo-nat"
+  default     = "sample-nat-new"
 }
 variable "pvt_rt_ame" {
   type        = string
   description = "Name of Pvt Rpoute table"
-  default     = "demo-private-rt"
+  default     = "sample-private-rt-new"
 }
 variable "pvt_subnet_name" {
   type        = string
   description = "Name of private subnets"
-  default     = "demo-private-subnet"
+  default     = "sample-private-subnet-new"
 }
 variable "enable_vpc_logs" {
   type    = bool
@@ -100,24 +100,24 @@ variable "enable_pub_alb_resource" {
 variable "alb_name" {
   type        = string
   description = "Name of ALB"
-  default     = "demo-alb"
+  default     = "sample-alb-new"
 }
 
 variable "logs_bucket" {
   description = "Name of bucket where we would be storing our logs"
   type        = string
-  default     = "demo-bucket-logs"
+  default     = "sample-bucket-logs"
 }
 
 variable "pvt_zone_name" {
   description = "Name of private zone"
   type        = string
-  default     = "demo-zone"
+  default     = "sample-zone"
 }
 
 variable "public_web_sg_name" {
   type    = string
-  default = "demo-sg-name"
+  default = "sample-sg-name-new"
 }
 variable "alb_certificate_arn" {
   description = "Cretificate arn for alb"
@@ -127,7 +127,6 @@ variable "alb_certificate_arn" {
 
 variable "logs_bucket_arn" {
   description = "ARN of bucket where we would be storing vpc our logs"
-  default     = "arn:aws:s3:::demo-bucket-logs"
+  default     = "arn:aws:s3:::sample-bucket-logs"
 }
-
 
