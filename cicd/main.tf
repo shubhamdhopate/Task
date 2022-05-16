@@ -21,7 +21,7 @@ module "ec2-instance" {
   key_name           = var.key_name
   instance_type      = var.instance_type
   security_groups    = data.terraform_remote_state.vpc.outputs.web_sg_id
-  subnet             = flatten(data.terraform_remote_state.vpc.outputs.private_subnet_ids)[0]
+  subnet             = data.terraform_remote_state.vpc.outputs.private_subnet_ids[0][0]
   encrypted_volume   = var.encrypted_volume
 }
 

@@ -12,7 +12,7 @@ variable "ec2_name" {
 variable "public_ip" {
   description = "Public Ip "
   type        = bool
-  default     = false 
+  default     = false
 }
 
 variable "tags" {
@@ -35,12 +35,12 @@ variable "volume_type" {
 variable "ami_id" {
   description = "Name of Launch configuration"
   type        = string
-  default     = "ami-05ba3a39a75be1ec4"
+  default     = "ami-0aeb7c931a5a61206"
 }
 variable "key_name" {
   description = "Key name of Launch configuration"
   type        = string
-  default     = "Jenkins_key"
+  default     = "jenkins_key"
 }
 variable "instance_type" {
   description = "Name of Launch configuration"
