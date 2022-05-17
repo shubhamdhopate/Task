@@ -1,7 +1,7 @@
    terraform {
      backend "s3" {
        bucket  = "testing-tf-state"
-       key     = "vpc/terraform.tfstate"
+       key     = "vpcdemo/terraform.tfstate"
        region  = "us-east-2"
        profile = "shubham"
      }
