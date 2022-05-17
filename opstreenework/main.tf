@@ -1,11 +1,11 @@
-  # terraform {
-  #   backend "s3" {
-  #     bucket  = "tf-file-manage-bucket"
-  #     key     = "vpc/terraform.tfstate"
-  #     region  = "us-east-2"
-  #     profile = "demo"
-  #   }
-  # } 
+   terraform {
+     backend "s3" {
+       bucket  = "testing-tf-state"
+       key     = "vpc/terraform.tfstate"
+       region  = "us-east-2"
+       profile = "shubham"
+     }
+   } 
   
 
 
